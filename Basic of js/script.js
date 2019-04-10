@@ -164,3 +164,32 @@ yearsUntilRetirement(1995,'Nasib');
 yearsUntilRetirement(2000,'Imran');
 yearsUntilRetirement(1952,'Salman');
 
+// Array
+
+var names = ['Nasib','Imran','Rakib'];
+var years = new Array(1995,1999,1997);
+
+console.log(names[2]);
+console.log(names.length);
+
+names[1] = 'Roni';
+names[names.length] = 'Akash';
+console.log(names);
+
+
+var Nasib = ['Abu','Nasib',1995,'student',false];
+
+Nasib.push('blue');
+Nasib.unshift('Md');
+console.log(Nasib);
+
+Nasib.pop();
+console.log(Nasib);
+
+Nasib.shift();
+console.log(Nasib);
+
+console.log(Nasib.indexOf(23));
+
+var isDesigner = Nasib.indexOf('designer') === -1 ?'Nasib is NOT a designer' : 'Nasib is a designer';
+console.log(isDesigner);
