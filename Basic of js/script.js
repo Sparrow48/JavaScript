@@ -193,3 +193,77 @@ console.log(Nasib.indexOf(23));
 
 var isDesigner = Nasib.indexOf('designer') === -1 ?'Nasib is NOT a designer' : 'Nasib is a designer';
 console.log(isDesigner);
+
+/* object and properties */
+
+var Nasib = {
+    firstName : 'Abu',
+    lastName : 'Nasib',
+    birthYear : 1995,
+    family : ['a','b','c','d'],
+    isMarried : false,
+    job : 'student'
+    
+
+};
+
+console.log(Nasib.isMarried);
+
+console.log(Nasib);
+
+console.log(Nasib.firstName);
+console.log(Nasib['lastName']);
+ var x= 'birthYear';
+ console.log(Nasib[x]);
+
+ Nasib.job = 'designer';
+ Nasib['isMarried']= true;
+ console.log(Nasib);
+
+ var a= new Object();
+ a.firstName = 'a';
+ a.birthYear = 1997;
+ a['lastName'] = 'x';
+ console.log(a);
+
+
+ /* objects and methods*/
+ var Nasib = {
+    firstName : 'Abu',
+    lastName : 'Nasib',
+    birthYear : 1995,
+    family : ['a','b','c','d'],
+    isMarried : false,
+    job : 'student' ,
+    
+    calAge : function(birthYear){
+        return 2019 - birthYear;
+    }
+};
+
+console.log(Nasib.calAge(1995));
+
+
+var Nasib = {
+    firstName : 'Abu',
+    lastName : 'Nasib',
+    birthYear : 1995,
+    family : ['a','b','c','d'],
+    isMarried : false,
+    job : 'student' ,
+    
+    calAge : function(){
+        this.age = 2019 - this.birthYear;
+    }
+};
+
+Nasib.calAge();
+console.log(Nasib);
+
+
+/* loops and iteration*/
+
+for(var i=0; i<10;i++)
+{
+    console.log(i);
+}
