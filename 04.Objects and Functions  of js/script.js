@@ -94,7 +94,7 @@ function shortFromA(mark){
 }
 
 var result = shortMarks(marks,shortFromA);
-console.log(result);*/
+console.log(result);
 
 
 (function(){
@@ -109,7 +109,10 @@ console.log(result);*/
     console.log(score);
     console.log(score>= 5-sub);
 
-})(5);
+})(5);*/
+
+
+
 
 
 
