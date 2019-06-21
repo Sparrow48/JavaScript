@@ -1,4 +1,4 @@
-// console.log('Before');
+ console.log('Before');
 //  getUser(1, (user) =>{
 //   getTherepo(user.gitUsername, (repos)=>{
 //         getCommits(repo, (commit)=>{
@@ -31,7 +31,7 @@ function getTherepo(username){
     return new Promise((resolve,reject) => {
         setTimeout(()=>{
             console.log('calling git api 1......');
-            resolve['repo1','repo2'];
+            resolve(['repo1','repo2']);
         }, 2000);
     });
 };
