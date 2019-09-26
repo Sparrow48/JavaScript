@@ -24,7 +24,7 @@ app.use((req,res,next) =>{
 
 // app.get('/api/v1/tours', getAllTours);
 // app.get('/api/v1/tours/:id', getTour );
-// app.post('/api/v1/tours', addTour);
+// app.post('/api/v1/tours', addTour); 
 // app.patch('/api/v1/tours/:id', updateTour);
 
 
